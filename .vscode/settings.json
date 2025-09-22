@@ -1,0 +1,9 @@
+{
+  // prettier 自動排版
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // import 自動排版
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  }
+}
