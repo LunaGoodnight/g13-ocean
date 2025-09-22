@@ -3,8 +3,11 @@ import { GameList } from "@/components/GameList";
 import MachineFooter from "@/components/lobby/MachineFooter";
 import { permanentRedirect } from "next/navigation";
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+
 async function fetchCurrentDevice() {
-	// TODO: 返回裝置"device""，後端創建專門獲取的方法，一開始放在機台內，獲取返回"machine"，其餘保持"web"
+	// TODO: return device type, backend should create dedicated method, initially set to "machine", otherwise "web"
 	const device: string = "machine";
 	return device;
 }
@@ -24,7 +27,7 @@ export default async function LobbyPage() {
 		}
 	}
 
-	// 使用layout或template來決定裝置用的版型
+	// Use layout or template to determine device layout
 	return (
 		<>
 			<GameList />

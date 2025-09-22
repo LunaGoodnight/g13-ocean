@@ -73,7 +73,6 @@ export const PrizePoolSectionWithCountUp = () => {
 							separator=","
 							decimals={2}
 							preserveValue={true}
-							delay={0}
 
 						/>
 					</div>
